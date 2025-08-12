@@ -17,3 +17,18 @@ Passo a Passo de como se criar um projeto no laravel:
     > - yes
     >  - cd  example-app
     >  - code .
+
+**#Configuração**
+
+Arquivo .env = environment ( Ambiente )
+
+O .env é um arquivo que nunca se soube para o github, por conter dados sensíveis.
+
+ 1. Criar um duplicar do **".env.example** e renomear  a cópia apenas como o **".env"**.
+ 2.  Dentro do projeto, executar o comando "composer  install", ele    instala dependências do PHP e gera pasta vendor.
+ 3. Gerar e instalar a dependência do node js com o comando "npm     install " ou "npm I".
+ 4.  Após o npm  install, usar o comando *"npm build"*, ele irá    transformar o arquivo de forma que a máquina ira entender. (building).
+ 5. O *"php  artisan  key:generate"*, O comando irá gerar uma chave criptografia.
+   -   *php  artisan* : tem todos os comandos;
+ 6. Database: migrations - ORM é mapeamento de objeto gerenciado, ele    trabalha com linguagem alternativa. O comando "php  artisan  migrate", ele cria o banco de dado,  "database.sqlite" na pasta database.
+ 7.  Por fim, rodar o comando *"composer run dev"*, para iniciar o projeto.
